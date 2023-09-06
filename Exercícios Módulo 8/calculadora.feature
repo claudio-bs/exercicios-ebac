@@ -1,19 +1,19 @@
-Feature: Calculadora
+Funcionalidade: Calculadora
     Como não consigo calcular mentalmente
     Quero usar a calculadora do sistema
     Para somar dois números
 
-    Scenario: Soma de dois números
-        Given eu acesse a calculadora
-        When somar 2 + 2
-        Then o resultado deve ser 4
+    Contexto: eu acesse a calculadora
 
-    Scenario Outline: Soma de dois números
-        Given eu acesse a calculadora
-        When somar <number1> + <number2>
-        Then o resultado deve ser <resul>
+    Cenário: Soma de dois números
+        Quando somar 2 + 2
+        Então o resultado deve ser 4
 
-        Examples:
+    Esquema do Cenário: Soma de dois números
+        Quando somar <number1> + <number2>
+        Então o resultado deve ser <resultado>
+
+        Exemplos:
             | number1 | number2 | resultado |
             | 7       | 23      | 30        |
             | 59      | 333     | 392       |
