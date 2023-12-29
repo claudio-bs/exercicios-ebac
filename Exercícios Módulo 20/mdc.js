@@ -9,6 +9,8 @@ function calcularMDC (num1, num2) {
 }
 
 let resultado = calcularMDC(150, 270)
-console.log(resultado)
+//console.log(resultado)
+
+module.exports = { calcularMDC }
 
 

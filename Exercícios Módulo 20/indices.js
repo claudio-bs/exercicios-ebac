@@ -1,15 +1,13 @@
 let numerico = [50, 786, 451, 369, 753, 158, 951, 852, 149, 237]
 
-let maior = () => {
-    return Math.max.apply(null, numerico)
+const maior = (n1 = numerico) => {
+    return Math.max.apply(null, n1)
 }
 
-let menor = () => {
-    return Math.min.apply(null, numerico)
+const menor = (n2 = numerico) => {
+    return Math.min.apply(null, n2)
 }
 
-let maiorRes = maior(numerico, 0)
-let menorRes = menor(numerico, 0)
+//console.log("O elemento de maior valor é", maior(), "e o de menor valor é", menor())
 
-
-console.log(`O elemento de maior valor é ${maiorRes} e o de menor valor é ${menorRes}.`)
+module.exports = { maior, menor } 
